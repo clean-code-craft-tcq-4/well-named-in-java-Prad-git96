@@ -19,7 +19,7 @@ public class ColorCoderTest {
     }
 
     public static void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
-        int pairNumber = ColorCoderUtils.getPairNumberFromColor(major, minor);
+        int pairNumber = ColorCoderUtils.getPairNumberFromColorPair(major, minor);
         System.out.println("Got pair number " + pairNumber);
         assert (pairNumber == expectedPairNumber);
     }

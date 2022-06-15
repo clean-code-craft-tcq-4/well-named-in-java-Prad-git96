@@ -18,7 +18,15 @@ public class ColorCoderUtils {
         return new ColorPair(majorColor, minorColor);
     }
 
-    public static int getPairNumberFromColor(MajorColor major, MinorColor minor) {
+    public static int getPairNumberFromColorPair(MajorColor major, MinorColor minor) {
         return major.getIndex() * ColorConstants.MINOR_COLORS_SIZE + minor.getIndex() + 1;
+    }
+
+    public static void getColorCodingManual() {
+        System.out.println("Color Code | Major color  Minor Color");
+
+        for (int i = 1; i <= 25; i++) {
+            System.out.println("\t" + i + "\t" + getColorFromPairNumber(i).toString());
+        }
     }
 }

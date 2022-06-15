@@ -24,7 +24,7 @@ public class ColorPair {
     @Override
     public String toString() {
         String colorPairStr = ColorConstants.MAJOR_COLORS[majorColor.getIndex()];
-        colorPairStr += " ";
+        colorPairStr += "\t";
         colorPairStr += ColorConstants.MINOR_COLORS[minorColor.getIndex()];
         return colorPairStr;
     }
